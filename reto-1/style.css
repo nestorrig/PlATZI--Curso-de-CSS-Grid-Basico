@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-auto-flow: column;
+    gap: 20px;
+    width: fit-content;
+}
+.item {
+    display: grid;
+    justify-items: end;
+    align-items: end;
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+}
+.item:nth-child(3n + 2) {
+    background-color: #66cf1a;
+}
+.item:nth-child(3n + 3) {
+	background-color: rgb(1, 175, 1);
+}
+span {
+    font-size: 36px;
+    padding-inline: 8px;
+    color: white;
+    background-color: green;
+}
